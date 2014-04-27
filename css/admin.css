@@ -1,0 +1,12 @@
+html,body{
+	height: 100%;
+}
+div{
+	background: #7C7C7C;
+	text-align: center;
+	position: relative;
+	height: 300px;
+}
+form{
+	text-align: center;
+}

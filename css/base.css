@@ -1,0 +1,111 @@
+/*Estilo base de la pagina */
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+
+	background: #EDEDED;
+}
+body{
+	margin: 0px;
+	height: 100%;
+}
+
+/* cabecera */
+
+header {
+	background-image: url("../imagenes/banner/banner6.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+header #logo_alcocerti{
+	margin: 0 auto;
+	text-align: center;
+	width: 150px;
+}
+header #slogan p{
+	color:#353535;
+}
+
+
+/* Menu principal */
+nav{
+	background: #000000;
+}
+#menu_principal{
+	color: #FFFFFF;
+}
+#menu_principal li{
+	border-bottom: 1px solid #EDEDED;
+	display: block;
+	width: 100%;
+	padding: 1em 0 1em 0;
+	text-align: center;
+}
+#menu_principal li:hover{
+	color:#C42700;
+	border-bottom: 1px solid #C42700;
+}
+#redes_sociales{
+	display: none;
+}
+
+
+/**/
+
+#content{
+	margin-top:-25px; 
+	height: 100%;
+}
+#content #fondo{
+	position: relative;
+	margin: 0px;
+	background-image:url("../imagenes/fondo/img.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+
+}
+#content #fondo section{
+	background:#FF5C08;
+	margin: 0px;
+	opacity: 0.8;
+	height: 100%;
+
+}
+#content #fondo section h1{
+	color:#FFFFFF;
+	background:#5E5E5E;
+	font-size: 35px;
+	padding-top: 5em;
+	padding-bottom: 5em;
+	text-align: center;
+	width: 100%;
+}
+#content #fondo section article{
+	text-align: center;
+	padding-top: 2em;
+	padding-bottom: 4em;
+}
+#content #fondo section article ul li{
+	border-radius: 100px;
+	display: inline-block;
+	background: #E8E8E8;
+	height: 180px;
+	width: 180px;
+}
+#content #fondo section article ul li:hover{
+	background: #FF3434;
+}
+
+/* footer */
+
+footer {
+	background: #000000;
+	color:#FFFFFF;
+	padding: 4em 0 4em 0;
+}
+footer h4{
+	text-align: center;
+}
