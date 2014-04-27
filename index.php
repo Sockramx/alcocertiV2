@@ -53,14 +53,9 @@
 						<li>d</li>
 						<li>w</li>
 						<li>i</li>
-						<li>d</li>
-						<li>w</li>
 					</ul>
-
 				</article>
 			</section>
-			
-			
 		</div>
 	</div>	
 	<footer>
