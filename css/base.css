@@ -30,17 +30,18 @@ header #slogan p{
 
 
 /* Menu principal */
-nav{
+nav{	
 	background: #000000;
+
 }
 #menu_principal{
 	color: #FFFFFF;
 }
 #menu_principal li{
 	border-bottom: 1px solid #EDEDED;
+	padding: 1em 0 1em 0;
 	display: block;
 	width: 100%;
-	padding: 1em 0 1em 0;
 	text-align: center;
 }
 #menu_principal li:hover{
@@ -50,8 +51,13 @@ nav{
 #redes_sociales{
 	display: none;
 }
-
-
+#menu_principal li a{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+#menu_principal li a:hover{
+	color:#C42700;
+}
 /**/
 
 #content{

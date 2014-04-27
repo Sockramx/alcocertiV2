@@ -6,7 +6,9 @@
 
 	<link rel="stylesheet" href="css/normalize.css"/>
 	<link rel="stylesheet" href="css/base.css"/>
+
 	<link rel="stylesheet" href="css/mediaqueries.css"/>
+	<link rel="stylesheet" type="text/css" href="css/producto.css"/>
 
 	<script src="js/jquery-1.11.0.min.js"></script>
 	<script src="js/js.js"></script>
@@ -28,8 +30,8 @@
 -->
 	<nav>
 		<ul id="menu_principal">
-			<li>Inicio</li>
-			<li>Productos</li>
+			<li><a href="index.php">Inicio</a></li>
+			<li id="producto">Productos</li>
 			<li>Servicios</li>
 			<li>Contacto</li>
 			<li>Locales</li>
