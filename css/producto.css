@@ -4,6 +4,7 @@
 	vertical-align: top;
 }
 #lista_categorias{
+	margin-bottom: 5px;
 	text-align: center;
 	width: 100%;
 }
@@ -20,6 +21,7 @@
 }
 
 #lista_productos{
+	margin-bottom: 5px;
 	width: 100%;
 }
 #lista_productos ul{
