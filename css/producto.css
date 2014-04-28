@@ -35,18 +35,3 @@
 	text-align: center;
 	width: 150px;
 }
-
-@media screen and (min-width: 768px){
-	/*Contenedor */
-	#lista_categorias,#lista_productos{
-		padding-top: 2em;
-		display: inline-block;
-		vertical-align: top;
-	}
-	#lista_categorias{
-		width: 20%;
-	}
-	#lista_productos{
-		width: 75%;
-	}
-}

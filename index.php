@@ -6,9 +6,9 @@
 
 	<link rel="stylesheet" href="css/normalize.css"/>
 	<link rel="stylesheet" href="css/base.css"/>
-
-	<link rel="stylesheet" href="css/mediaqueries.css"/>
 	<link rel="stylesheet" type="text/css" href="css/producto.css"/>
+	<link rel="stylesheet" href="css/mediaqueries.css"/>
+	
 
 	<script src="js/jquery-1.11.0.min.js"></script>
 	<script src="js/js.js"></script>
