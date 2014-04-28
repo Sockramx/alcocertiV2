@@ -9,7 +9,6 @@ $conec = $conexion->conectar();
 $usuario = $_POST['usuario'];
 $password = $_POST['password'];
  
-
  /* consulta a la base de datos si el usuario y password estan registrados */
 $sql = "SELECT * FROM Usuario WHERE nomb_Usuario='$usuario' AND pass_Usuario='$password'";
 /* Guarda los resultados obtenidos en a variable rs */

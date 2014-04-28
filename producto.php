@@ -3,6 +3,15 @@
 		<li>monitor</li>
 		<li>laptops</li>
 		<li>memorias</li>
+		<li>monitor</li>
+		<li>laptops</li>
+		<li>memorias</li>
+		<li>monitor</li>
+		<li>laptops</li>
+		<li>memorias</li>
+		<li>monitor</li>
+		<li>laptops</li>
+		<li>memorias</li>
 	</ul>
 </section>
 <section id="lista_productos">
