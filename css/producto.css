@@ -16,16 +16,24 @@
 	border-radius: 5px 5px 5px 5px;
 	border-bottom: 1px solid #FF6C0D;
 	display: block;
-	padding: 1em 0 1pxem 0;
+	padding: 1em 0 1em 0;
 }
-#Llista_categorias ul li {
-	margin-bottom: 5px; 
-}
+
 #lista_productos{
 	width: 100%;
 }
 #lista_productos ul{
 	list-style: none;
+	text-align: center;
+}
+
+#lista_productos ul li{
+	background-color: #46AFFF;
+	display: inline-block;
+	margin-bottom: 5px;
+	height: 150px;
+	text-align: center;
+	width: 150px;
 }
 
 @media screen and (min-width: 768px){
