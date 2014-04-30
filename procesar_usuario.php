@@ -12,7 +12,7 @@ include ("clases/usuario.php");
 $nombre_usuario = $_POST['nombre_usuario'];
 $apellido_usuario = $_POST['apellido_usuario'];
 $dni_usuario = $_POST['dni_usuario'];
-$password_usuario = $_POST['password_usuario'];
+$password_usuario = sha1($_POST['password_usuario']);
 $telefono_usuario = $_POST['telefono_usuario'];
 $celular_usuario = $_POST['celular_usuario'];
 
