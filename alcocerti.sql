@@ -1,30 +1,8 @@
--- phpMyAdmin SQL Dump
--- version 3.5.8.1deb1
--- http://www.phpmyadmin.net
---
--- Servidor: localhost
--- Tiempo de generación: 25-04-2014 a las 05:32:25
--- Versión del servidor: 5.5.34-0ubuntu0.13.04.1
--- Versión de PHP: 5.4.9-4ubuntu2.4
+create database alcocerti
 
-SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
+use alcocerti
 
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
-
---
--- Base de datos: `alcocerti`
---
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `Categoria`
---
+drop database alcocerti
 
 CREATE TABLE IF NOT EXISTS `Categoria` (
   `id_Categoria` int(11) NOT NULL AUTO_INCREMENT,
@@ -81,7 +59,7 @@ CREATE TABLE IF NOT EXISTS `Usuario` (
   `nomb_Usuario` varchar(30) DEFAULT NULL,
   `ape_Usuario` varchar(30) DEFAULT NULL,
   `dni_Usuario` char(8) DEFAULT NULL,
-  `pass_Usuario` char(20) DEFAULT NULL,
+  `pass_Usuario` char(200) DEFAULT NULL,
   `tele_Usuario` char(9) DEFAULT NULL,
   `celu_Usuario` char(7) DEFAULT NULL,
   PRIMARY KEY (`id_Usuario`)
@@ -103,14 +81,11 @@ INSERT INTO `Usuario` (`id_Usuario`, `nomb_Usuario`, `ape_Usuario`, `dni_Usuario
 --
 -- Restricciones para tablas volcadas
 --
-
+INSERT INTO Usuario (`id_Usuario`, `nomb_Usuario`, `ape_Usuario`, `dni_Usuario`, `pass_Usuario`, `tele_Usuario`, `celu_Usuario`) VALUES (NULL, 'admin2', 'ad', '1546', '7110eda4d09e062aa5e4a390b0a572ac0d2c0220', '589445', '9412215')
 --
+SELECT * FROM Usuario 
 -- Filtros para la tabla `Producto`
 --
 ALTER TABLE `Producto`
   ADD CONSTRAINT `fk_Categoria_Producto` FOREIGN KEY (`id_Categoria`) REFERENCES `Categoria` (`id_Categoria`),
   ADD CONSTRAINT `fk_Usuario_Producto` FOREIGN KEY (`id_Usuario`) REFERENCES `Usuario` (`id_Usuario`);
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
