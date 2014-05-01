@@ -22,7 +22,7 @@ if(mysql_num_rows($rs)==1){
 	header('Location: panel_control.php');
 }else{
 	echo "errrrp";
-	echo $password;
+	
 }
 
 
