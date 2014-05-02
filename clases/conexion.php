@@ -1,11 +1,10 @@
 <?php 
-
 class Conexion{
 	var $host;
 	var $usuario;
 	var $password;
 	var $db;
-	var $conec;
+	
 	
 	function __construct($host="localhost",$usuario="root",$password="toor",$db="alcocerti"){
 		$this->host = $host;
@@ -15,7 +14,7 @@ class Conexion{
 	}
 	function conectar(){
 		
-		$this->conec  = $conec = mysql_connect($this->server,$this->usuario,$this->password) or die(mysql_error());
+		$conec = mysql_connect($this->host,$this->usuario,$this->password) or die(mysql_error());
 		mysql_select_db($this->db,$conec) or die(mysql_error());
 		
 		return $conec;
