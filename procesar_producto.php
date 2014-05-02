@@ -9,7 +9,7 @@ if(!isset($_SESSION['usuario'])){
 /*
 include ('clases/producto.php');*/
 include ('clases/usuario.php');
-include ('clases/categoria.php');
+/*include ('clases/categoria.php');*/
 
 
 $nombre_usuario=$_SESSION['usuario'];
