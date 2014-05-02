@@ -6,6 +6,10 @@ if(!isset($_SESSION['usuario'])){
 	header('Location: index.php');
 }
 
+include ('clases/conexion.php');
+
+$conexion = new Conexion();
+$conec = $conexion->conectar();
  ?>
 
 <html lang="en">
@@ -80,9 +84,16 @@ if(!isset($_SESSION['usuario'])){
 						<td>Categoria</td>
 						<td>
 							<select name="categoria_producto">
-								<option> </option>
-								<option value="Monitor">Monitor</option>
-								<option value="Laptop">Laptop</option>
+								<?php 
+									$sql = "SELECT * FROM Categoria ";
+									$rs = mysql_query($sql,$conec);
+									while($row=mysql_fetch_array($rs)){
+										echo "<option>";
+										echo $row['nomb_Categoria'];
+										echo "</option>";
+									}
+
+								 ?>
 							</select>
 						</td>
 					</tr>

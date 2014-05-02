@@ -1,6 +1,6 @@
 <?php 
 
-include ("conexion.php");
+require_once("conexion.php"); /* require funciona mejor  q un include */
 
 class Categoria{
 	var $nombre;
