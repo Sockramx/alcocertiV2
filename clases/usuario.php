@@ -32,6 +32,13 @@ class Usuario{
 	}
 	function obtener_usuario(){
 
+		$conexion = new Conexion();
+		$conec = $conexion->conectar();
+
+		$sql = "SELECT id_Usuario FROM Usuario WHERE nomb_Usuario='$this->nombre'";
+		$rs=mysql_query($sql,$conec);
+		
+		return $rs;
 	}
 	function actualizar_usuario(){
 

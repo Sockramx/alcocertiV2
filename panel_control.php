@@ -62,24 +62,25 @@ if(!isset($_SESSION['usuario'])){
 		</section>
 		<section id="producto">
 			<h2>Registrar Producto</h2>
-			<form action="procesar_producto.php" method="POST">
+			<form action="procesar_producto.php" method="POST" enctype="multipart/form-data">
 				<table>
 					<tr>
 						<td>Nombre:</td>
-						<td><input type="text"></td>
+						<td><input type="text" name="nombre_producto"></td>
 					</tr>
 					<tr>
 						<td>Descripción:</td>
-						<td><textarea name="descripcion" id="" cols="30" rows="10"></textarea></td>
+						<td><textarea name="descripcion_producto" cols="30" rows="10"></textarea></td>
 					</tr>
 					<tr>
 						<td>Imagen:</td>
-						<td><input type="file"></td>
+						<td><input type="file" name="imagen"></td>
 					</tr>
 					<tr>
 						<td>Categoria</td>
 						<td>
-							<select name="categoria" id="">
+							<select name="categoria_producto">
+								<option> </option>
 								<option value="Monitor">Monitor</option>
 								<option value="Laptop">Laptop</option>
 							</select>
@@ -87,8 +88,7 @@ if(!isset($_SESSION['usuario'])){
 					</tr>
 					<tr>
 						<td>Marca:</td>
-						<td><input type="text"></td>
-						<!-- El campo marca falta crear en la base de datos de producto-->
+						<td><input type="text" name="marca_producto"></td>
 					</tr>
 					<tr>
 						<td></td>
@@ -96,7 +96,6 @@ if(!isset($_SESSION['usuario'])){
 					</tr>
 				</table>
 			</form>
-			
 		</section>
 		<section id="categoria">
 			<h2>Registrar Categoria</h2>
