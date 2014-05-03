@@ -1,0 +1,35 @@
+/*estilos del Panel de control */
+
+body{
+	width: 1200px;
+	margin: 0 auto;
+}
+nav{
+	background: #CCCCCC;
+	width: 20%;
+}
+nav ul li {
+	color:#FFFFFF;
+	list-style: none;
+	padding: 0.5em 0 0.5em 0;
+	background: #6A6A6A;
+	margin: 5px 0 5px 0;
+	text-align: center;
+}
+nav ul li:hover{
+	color:#EB1B39;
+}
+#content{
+	width: 78%;
+	background: #EDEDED;
+}
+nav,#content{
+	display: inline-block;
+	vertical-align: top;
+}
+header{
+	background: #FF4907;
+	margin: 0px;
+	padding: 1em 0 1em 0;
+}
+

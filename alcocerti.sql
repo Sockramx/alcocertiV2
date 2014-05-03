@@ -1,6 +1,6 @@
 create database alcocerti
 
-use alcocerti
+use alcocerti;
 
 drop database alcocerti
 
@@ -83,7 +83,8 @@ INSERT INTO `Usuario` (`id_Usuario`, `nomb_Usuario`, `ape_Usuario`, `dni_Usuario
 --
 INSERT INTO Usuario (`id_Usuario`, `nomb_Usuario`, `ape_Usuario`, `dni_Usuario`, `pass_Usuario`, `tele_Usuario`, `celu_Usuario`) VALUES (NULL, 'admin2', 'ad', '1546', '7110eda4d09e062aa5e4a390b0a572ac0d2c0220', '589445', '9412215')
 --
-SELECT * FROM Usuario 
+SELECT * FROM Usuario;
+SELECT * FROM Producto; 
 -- Filtros para la tabla `Producto`
 --
 ALTER TABLE `Producto`

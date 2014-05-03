@@ -14,23 +14,41 @@ $conec = $conexion->conectar();
 
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+	<link rel="stylesheet" type="text/css" href="css/panel_control.css"/>
+
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/js_panel_control.js"></script>
 	<title>Document</title>
 </head>
 <body>
-	<p>
+	<header>
+		<p>
 		<a href="cerrar.php">cerrar session</a>
-	</p>
+		</p>
+	</header>
+	
 	<nav>
 		<ul>
-			<li>Usuarios</li>
-			<li>Productos</li>
-			<li>Categorias</li>
+			<li id="opc_usuario">Usuarios</li>
+			<li id="opc_producto">Productos</li>
+			<li id="opc_categoria">Categorias</li>
 		</ul>
 	</nav>
 	<div id="content">
-		<h2>Regostrar Usuario</h2>
+		<section id="algo">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+		</section>
 		<section id="usuario">
+			<h2>Registrar Usuario</h2>
 			<form action="procesar_usuario.php" method="POST">
 				<table>
 					<tr>

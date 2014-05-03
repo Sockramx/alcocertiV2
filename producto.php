@@ -30,5 +30,6 @@ $conec = $conexion->conectar();
 				echo "</li>";
 			}
 		 ?>
+
 	</ul>
 </section>

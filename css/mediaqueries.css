@@ -39,6 +39,9 @@
 	}
 
 	/*Contenedor */
+	#lista_productos ul li{
+		margin: 5px;
+	}
 	#lista_categorias,#lista_productos{
 		padding-top: 2em;
 		display: inline-block;
