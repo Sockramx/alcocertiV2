@@ -1,4 +1,4 @@
-#lista_categorias,#lista_productos{
+#lista_categorias,#content_productos{
 	padding-top: 2em;
 	display: block;
 	vertical-align: top;
@@ -20,23 +20,23 @@
 	padding: 1em 0 1em 0;
 }
 
-#lista_productos{
-	margin-bottom: 5px;
+#content_productos{
+	margin: 0px;
 	width: 100%;
 }
-#lista_productos ul{
+#content_productos #lista_productos ul{
 	list-style: none;
 	text-align: center;
 }
 
-#lista_productos ul li{
+#content_productos #lista_productos ul li{
 
 	display: inline-block;
 	vertical-align: top;
 	margin-bottom: 5px;
 	text-align: center;
 }
-#lista_productos ul li img{
-	height: 250px;
-	width: 250px;
+#content_productos #lista_productos ul li img{
+	height: 100px;
+	width: 100px;
 }

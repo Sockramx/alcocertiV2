@@ -12,29 +12,33 @@ $categoria = new Categoria();
 	<ul>
 		<?php 
 			$rs=$categoria->obtener_categoria();
-
+		
 			while($row=mysql_fetch_array($rs)){
 				echo "<li>";
+				echo "<a>";
 				echo $row['nomb_Categoria'];
+				echo "</a>";
 				echo "</li>";
 			}
 		 ?>
 	</ul>
 </section>
-<section id="lista_productos">
-	<ul>
-		<?php 
-			$rs=$producto->obtener_producto();
-			
-			while($row=mysql_fetch_array($rs)){
-				echo "<li>";
-				$imagen=$row['img_Producto'];
-				echo $row['nomb_Producto'];
-				echo "<br>";
-				echo "<img src='$imagen'>";
-				echo "</li>";
-			}
-		 ?>
+<section id="content_productos">
+	<article id="lista_productos">
+		<ul>
+			<?php 
+				$rs=$producto->obtener_producto();
+				
+				while($row=mysql_fetch_array($rs)){
+					echo "<li>";
+					$imagen=$row['img_Producto'];
+					echo $row['nomb_Producto'];
+					echo "<br>";
+					echo "<img src='$imagen'>";
+					echo "</li>";
+				}
+			 ?>
 
-	</ul>
+		</ul>
+	</article>
 </section>

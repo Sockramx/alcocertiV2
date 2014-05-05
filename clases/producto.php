@@ -33,7 +33,7 @@ class Producto{
 		$conexion = new Conexion();
 		$conec = $conexion->conectar();
 
-		$sql = "SELECT * FROM Producto ";
+		$sql = "SELECT * FROM Producto ORDER BY nomb_Producto";
 		$rs = mysql_query($sql,$conec);
 		return $rs;
 	}

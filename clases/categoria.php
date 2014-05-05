@@ -23,7 +23,7 @@ class Categoria{
 		$conexion = new Conexion();
 		$conec = $conexion->conectar();
 
-		$sql = "SELECT * FROM Categoria ";
+		$sql = "SELECT * FROM Categoria ORDER BY nomb_Categoria ";
 		$rs = mysql_query($sql,$conec);
 
 		return $rs;
