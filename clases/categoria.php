@@ -19,10 +19,23 @@ class Categoria{
 
 	}
 	function obtener_categoria(){
+
 		$conexion = new Conexion();
 		$conec = $conexion->conectar();
+
+		$sql = "SELECT * FROM Categoria ";
+		$rs = mysql_query($sql,$conec);
+
+		return $rs;
+	}
+	function obtener_id_categoria(){
+
+		$conexion = new Conexion();
+		$conec = $conexion->conectar();
+
 		$sql = "SELECT id_Categoria FROM Categoria WHERE nomb_Categoria='$this->nombre'";
 		$rs=mysql_query($sql,$conec);
+
 		return $rs;
 	}
 	function actualizar_categoria(){

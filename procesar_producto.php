@@ -40,7 +40,7 @@ $id_usuario = (int)$usuario->obtener_usuario(); /* convierto la cadena a entero 
 /*Obtenemos el id de categoria */
 
 $categoria = new Categoria($categoria_producto);
-$id_categoria = (int)$categoria->obtener_categoria(); /* convierto la cadena a entero con int */
+$id_categoria = (int)$categoria->obtener_id_categoria(); /* convierto la cadena a entero con int */
 
 
 $producto = new Producto($nombre_producto,$marca_producto,$descripcion_producto,$ruta,$id_categoria,$id_usuario);

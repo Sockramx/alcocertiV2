@@ -1,4 +1,5 @@
 <?php 
+require_once ("conexion.php");
 
 class Producto{
 	var $nombre;
@@ -29,6 +30,12 @@ class Producto{
 	}
 	function obtener_producto(){
 
+		$conexion = new Conexion();
+		$conec = $conexion->conectar();
+
+		$sql = "SELECT * FROM Producto ";
+		$rs = mysql_query($sql,$conec);
+		return $rs;
 	}
 	function actualizar_producto(){
 

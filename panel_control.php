@@ -6,10 +6,10 @@ if(!isset($_SESSION['usuario'])){
 	header('Location: index.php');
 }
 
-include ('clases/conexion.php');
+include ('clases/categoria.php');
 
-$conexion = new Conexion();
-$conec = $conexion->conectar();
+$categoria = new Categoria();
+
  ?>
 
 <html lang="en">
@@ -103,8 +103,9 @@ $conec = $conexion->conectar();
 						<td>
 							<select name="categoria_producto">
 								<?php 
-									$sql = "SELECT * FROM Categoria ";
-									$rs = mysql_query($sql,$conec);
+									
+									$rs=$categoria->obtener_categoria();
+									
 									while($row=mysql_fetch_array($rs)){
 										echo "<option>";
 										echo $row['nomb_Categoria'];

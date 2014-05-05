@@ -1,16 +1,18 @@
 <?php 
 
-include ('clases/conexion.php');
+include ('clases/producto.php');
+include ('clases/categoria.php');
 
-$conexion = new Conexion();
-$conec = $conexion->conectar();
+$producto = new Producto();
+$categoria = new Categoria();
+
  ?>
 
 <section id="lista_categorias">
 	<ul>
 		<?php 
-			$sql = "SELECT * FROM Categoria ";
-			$rs = mysql_query($sql,$conec);
+			$rs=$categoria->obtener_categoria();
+
 			while($row=mysql_fetch_array($rs)){
 				echo "<li>";
 				echo $row['nomb_Categoria'];
@@ -22,8 +24,8 @@ $conec = $conexion->conectar();
 <section id="lista_productos">
 	<ul>
 		<?php 
-			$sql = "SELECT * FROM Producto ";
-			$rs = mysql_query($sql,$conec);
+			$rs=$producto->obtener_producto();
+			
 			while($row=mysql_fetch_array($rs)){
 				echo "<li>";
 				$imagen=$row['img_Producto'];

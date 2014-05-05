@@ -19,6 +19,9 @@ class Conexion{
 		
 		return $conec;
 	}
+	function cerrar_conexion(){
+		mysql_close(mysql_connect($this->host,$this->usuario,$this->password));
+	}
 }
 
  ?>
