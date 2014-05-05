@@ -1,8 +1,11 @@
 <?php 
 session_start();
 
-session_destroy();
+include ("clases/conexion.php");
 
+session_destroy();
+$conexion=new Conexion();
+$conexion->cerrar_conexion();
 echo "has cerrado sesion ";
 
  ?>
