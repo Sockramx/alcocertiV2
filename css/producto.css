@@ -30,10 +30,13 @@
 }
 
 #lista_productos ul li{
-	background-color: #FA9393;
+
 	display: inline-block;
+	vertical-align: top;
 	margin-bottom: 5px;
-	height: 150px;
 	text-align: center;
-	width: 150px;
+}
+#lista_productos ul li img{
+	height: 250px;
+	width: 250px;
 }

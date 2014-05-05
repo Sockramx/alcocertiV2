@@ -26,7 +26,10 @@ $conec = $conexion->conectar();
 			$rs = mysql_query($sql,$conec);
 			while($row=mysql_fetch_array($rs)){
 				echo "<li>";
+				$imagen=$row['img_Producto'];
 				echo $row['nomb_Producto'];
+				echo "<br>";
+				echo "<img src='$imagen'>";
 				echo "</li>";
 			}
 		 ?>
