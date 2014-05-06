@@ -13,9 +13,28 @@
 	<script src="js/jquery-1.11.0.min.js"></script>
 	<script src="js/js.js"></script>
 
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#producto").click(function(){
+				$("#content").load("producto.php",function(){
+					$("#content_productos").load("promocion_producto.php",function(){
+						$("#lista_categorias li").click(function(){
+							var id  = $(this).attr('id');
+							alert(id);
+							$("#content_productos").load("producto.php #lista_productos");
+
+						});
+					});
+			
+				});
+			});
+		});	
+	</script>
 	<title>Alcerti.com | Mayorista en Tecnología</title>
 </head>
 <body>
+
 	<!--
 	<header>
 		<figure id="logo_alcocerti">

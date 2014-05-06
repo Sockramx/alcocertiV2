@@ -42,7 +42,7 @@
 	#lista_productos ul li{
 		margin: 5px;
 	}
-	#lista_categorias,#lista_productos{
+	#lista_categorias,#content_productos{
 		padding-top: 2em;
 		display: inline-block;
 		vertical-align: top;
@@ -50,7 +50,7 @@
 	#lista_categorias{
 		width: 20%;
 	}
-	#lista_productos{
+	#content_productos{
 		width: 75%;
 	}
 }

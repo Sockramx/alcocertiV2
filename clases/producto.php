@@ -28,12 +28,12 @@ class Producto{
 		$sql = "INSERT INTO `Producto` (`id_Producto`, `nomb_Producto`, `marc_Producto`, `descrip_Producto`, `img_Producto`, `id_Categoria`, `id_Usuario`) VALUES (null, '$this->nombre', '$this->marca', '$this->descripcion', '$this->img_producto',$this->categoria,$this->usuario)";
 		mysql_query($sql,$conec);  
 	}
-	function obtener_producto(){
+	function obtener_producto($id_Categoria){
 
 		$conexion = new Conexion();
 		$conec = $conexion->conectar();
 
-		$sql = "SELECT * FROM Producto ORDER BY nomb_Producto";
+		$sql = "SELECT * FROM Producto WHERE id_Categoria='$id_Categoria' ORDER BY nomb_Producto";
 		$rs = mysql_query($sql,$conec);
 		return $rs;
 	}
