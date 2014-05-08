@@ -6,7 +6,6 @@ include ('clases/categoria.php');
 $producto = new Producto();
 $categoria = new Categoria();
 
-
  ?>
 
 <section id="lista_categorias">
