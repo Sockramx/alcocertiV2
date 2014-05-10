@@ -17,20 +17,13 @@ $(document).ready(function(){
 					'url' : 'json.php',
 					'params' : '?categoria=' + $this.data('id'),
 					'success' : function(response) {
-						var datajson = response;
-						alert(datajson.nombre)
-
-						}
-
 						
-			
-							
 							
 							$("#content_productos #lista_productos").html(response);
 								
 					
-						
-/*		$("#content_productos #lista_productos").html(datajson.id_categoria );*/
+							
+							
 
 
 												/*
