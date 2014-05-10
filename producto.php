@@ -18,19 +18,22 @@ $categoria = new Categoria();
 				$id_Categoria = $row['id_Categoria'];
 				$nomb_Categoria = $row['nomb_Categoria'];
 
-				echo "<li id='$id_Categoria'>";
-				echo "<a href='#content_productos'>";
+				echo "<li >";
+				echo "<a data-id='$id_Categoria' class='categoria' href='#content_productos'>";
 				echo $row['nomb_Categoria'];
 				echo "</a>";
 				echo "</li>";
 			}
+			/*Aqui cargo las categorias mo estacod*/
 		 ?>
 	</ul>
 </section>
 <section id="content_productos">
 	<article id="lista_productos">
 		<ul>
+			
 			<?php 
+			/*
 				
 				$rs=$producto->obtener_producto($id_Categoria);
 				
@@ -41,7 +44,7 @@ $categoria = new Categoria();
 					echo "<br>";
 					echo $row['nomb_Producto'];
 					echo "</li>";
-				}
+				}*/
 			 ?>
 
 		</ul>

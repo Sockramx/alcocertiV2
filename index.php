@@ -10,6 +10,21 @@
 	<link rel="stylesheet" href="css/mediaqueries.css"/>
 	
 	<script src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript">
+	    $.getter = function ( params ) {
+	            params.params = params.params || '';
+	     
+	            $.get(params.url + params.params)
+	            .success(function(request){
+	                    if ($.isFunction(params.success)) {params.success(request);}
+	                    if ($.isFunction(params.complete)) {params.complete(request);}
+	            })
+	            .error(function(){
+	                    if ( $.isFunction(callNotification) ) {callNotification({ 'type': 'error', 'msg' : params.warning})}
+	                    if ($.isFunction(params.error)) {params.error();}
+	            });
+	    }
+	</script>
 	<script src="js/js.js"></script>
 
 	<title>Alcerti.com | Mayorista en Tecnología</title>
@@ -43,6 +58,7 @@
 		</ul>
 	</nav>
 	<div id="content">
+		<!-- contenedor principal -->
 		<div id="fondo">
 			<section>
 				<h1>Lo ultimo en Tecnología</h1>
