@@ -41,7 +41,7 @@ CREATE TABLE IF NOT EXISTS `Producto` (
   KEY `fk_Usuario_Producto` (`id_Usuario`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
---
+SELECT * FROM Producto WHERE id_Categoria=5;
 -- Volcado de datos para la tabla `Producto`
 --
 
@@ -84,9 +84,11 @@ INSERT INTO `Usuario` (`id_Usuario`, `nomb_Usuario`, `ape_Usuario`, `dni_Usuario
 INSERT INTO Usuario (`id_Usuario`, `nomb_Usuario`, `ape_Usuario`, `dni_Usuario`, `pass_Usuario`, `tele_Usuario`, `celu_Usuario`) VALUES (NULL, 'admin2', 'ad', '1546', '7110eda4d09e062aa5e4a390b0a572ac0d2c0220', '589445', '9412215')
 --
 SELECT * FROM Usuario;
-SELECT * FROM Producto; 
+SELECT * FROM Categoria; 
+SELECT * FROM Producto where id_categoria = 7;
+
+SELECT id_Categoria FROM Categoria WHERE nomb_Categoria='audifonos'
 -- Filtros para la tabla `Producto`
---
 ALTER TABLE `Producto`
   ADD CONSTRAINT `fk_Categoria_Producto` FOREIGN KEY (`id_Categoria`) REFERENCES `Categoria` (`id_Categoria`),
   ADD CONSTRAINT `fk_Usuario_Producto` FOREIGN KEY (`id_Usuario`) REFERENCES `Usuario` (`id_Usuario`);

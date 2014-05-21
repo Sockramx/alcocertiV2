@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="css/mediaqueries.css"/>
 	
 	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="js/handlebars-1.0.0-rc.4.js"></script>
 	<script type="text/javascript">
 	    $.getter = function ( params ) {
 	            params.params = params.params || '';
@@ -67,10 +68,11 @@
 				</figure>
 				<article>
 					<ul>
-						<li>i</li>
-						<li>d</li>
-						<li>w</li>
-						<li>i</li>
+						<li><img src="imagenes/iconos/prod.jpg"></li>
+						<li><img src="imagenes/iconos/prod.jpg"></li>
+						<li><img src="imagenes/iconos/prod.jpg"></li>
+						<li><img src="imagenes/iconos/prod.jpg"></li>
+						
 					</ul>
 				</article>
 			</section>

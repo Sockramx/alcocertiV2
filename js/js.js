@@ -1,14 +1,9 @@
 $(document).ready(function(){
 	$("#producto").click(function(){
 		$("#content").load("producto.php",function(){
-			/*$("#content_productos").load("promocion_producto.php");*/
-			$('.categoria').on("click", function(){
-/*
-				$.ajax({
-					datatype: 'json'
-					url: ''
+			
 
-				});*/
+			$('.categoria').on("click", function(){
 				
 				var $this = $(this);
 				var id_categoria = $this.data('id');
@@ -17,19 +12,25 @@ $(document).ready(function(){
 					'url' : 'json.php',
 					'params' : '?categoria=' + $this.data('id'),
 					'success' : function(response) {
-						
-							
-							$("#content_productos #lista_productos").html(response);
-								
-					
-							
-							
+							$("#content_productos #lista_productos ul")
+								.html(Handlebars
+									.compile('\
+											{{#objects}}\
+												<li>\
+													<img src={{ imagen }}>\
+													<h4>{{ nombre }}</h4>\
+												</li>\
+											{{else}}\
+											<div>\
+												<li>\
+													<p>\
+													Lo sentimos no hay productos en esta categoria.\
+													<p>\
+												</li>\
+											{{/objects}}\
+									')(eval('(' + response + ')'))	
+								);
 
-
-												/*
-						var $c = $("#content_productos #lista_productos")
-						$c.html( html + response)
-						alert(response);*/
 					},
 					'error' : function(){
 						alert('Lo sentimos no pse pudo completar la operacion');

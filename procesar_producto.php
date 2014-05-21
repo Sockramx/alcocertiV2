@@ -25,8 +25,10 @@ move_uploaded_file($archivo,$ruta."/".$nombreArchivo);
 $ruta = $ruta."/".$nombreArchivo;
 
 $categoria_producto = $_POST['categoria_producto'];
+
 $marca_producto = $_POST['marca_producto'];
 
+echo $categoria_producto;
 
 
 
@@ -35,16 +37,14 @@ $marca_producto = $_POST['marca_producto'];
 $usuario = new Usuario($nombre_usuario);
 $id_usuario = (int)$usuario->obtener_usuario(); /* convierto la cadena a entero con int */
 
-
-
 /*Obtenemos el id de categoria */
 
 $categoria = new Categoria($categoria_producto);
-$id_categoria = (int)$categoria->obtener_id_categoria(); /* convierto la cadena a entero con int */
-
+$id_categoria = (int)$categoria->obtener_id_categoria($categoria_producto); /* convierto la cadena a entero con int */
 
 $producto = new Producto($nombre_producto,$marca_producto,$descripcion_producto,$ruta,$id_categoria,$id_usuario);
 $producto->registrar_producto();
+
 
 
 

@@ -23,19 +23,21 @@ class Categoria{
 		$conexion = new Conexion();
 		$conec = $conexion->conectar();
 
-		$sql = "SELECT * FROM Categoria ORDER BY nomb_Categoria ";
+		$sql = "SELECT * FROM Categoria";
 		$rs = mysql_query($sql,$conec);
 
 		return $rs;
 	}
-	function obtener_id_categoria(){
+	function obtener_id_categoria($categoria_producto){
 
 		$conexion = new Conexion();
 		$conec = $conexion->conectar();
 
-		$sql = "SELECT id_Categoria FROM Categoria WHERE nomb_Categoria='$this->nombre'";
-		$rs=mysql_query($sql,$conec);
+		echo $categoria_producto;
 
+		$sql = "SELECT id_Categoria FROM Categoria WHERE nomb_Categoria='$categoria_producto'";
+		$rs=mysql_query($sql,$conec);
+		echo $rs;
 		return $rs;
 	}
 	function actualizar_categoria(){

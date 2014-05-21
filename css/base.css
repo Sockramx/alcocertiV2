@@ -67,7 +67,7 @@ nav{
 #content #fondo{
 	position: relative;
 	margin: 0px;
-	background-image:url("../imagenes/fondo/img.png");
+	background:#FFFFFF;
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100%;
@@ -95,18 +95,26 @@ nav{
 	padding-bottom: 4em;
 }
 #content #fondo section article ul li{
-	border-radius: 100px;
+	list-style: none;
 	display: inline-block;
+}
+#content #fondo section article ul li img{
+	border-radius: 100px;
+	
 	background: #E8E8E8;
 	height: 180px;
 	width: 180px;
 }
-#content #fondo section article ul li:hover{
+#content #fondo section article ul li img:hover{
 	background: #FF3434;
 }
 
 /* footer */
 
+
+.l_prod{
+	
+}
 footer {
 	background: #000000;
 	color:#FFFFFF;

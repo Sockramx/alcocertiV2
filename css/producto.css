@@ -12,12 +12,23 @@
 	color: #FFFFFF;
 	list-style: none;
 }
+#lista_categorias ul li a{
+	text-decoration: none;
+	color: #EDEDED;
+}
 #lista_categorias ul li{
 	background:#727272;
-	border-radius: 5px 5px 5px 5px;
-	border-bottom: 1px solid #FF6C0D;
+	border-radius: 20px 20px 20px 20px;
+	border-bottom: 1px solid #EDEDED;
+	margin-top: 2px;
 	display: block;
 	padding: 1em 0 1em 0;
+}
+#lista_categorias ul li:hover{
+	background:#E57070;
+}
+#lista_categorias ul li a:hover{
+	color: #AD0000;
 }
 
 #content_productos{
@@ -35,8 +46,10 @@
 	vertical-align: top;
 	margin-bottom: 5px;
 	text-align: center;
+
 }
 #content_productos #lista_productos ul li img{
-	height: 200px;
-	width: 200px;
+	height: 250px;
+	width: 250px;
 }
+

@@ -8,7 +8,7 @@ if(!isset($_SESSION['usuario'])){
 
 include ('clases/categoria.php');
 
-$categoria = new Categoria();
+
 
  ?>
 
@@ -103,7 +103,7 @@ $categoria = new Categoria();
 						<td>
 							<select name="categoria_producto">
 								<?php 
-									
+									$categoria = new Categoria();
 									$rs=$categoria->obtener_categoria();
 									
 									while($row=mysql_fetch_array($rs)){
@@ -111,7 +111,6 @@ $categoria = new Categoria();
 										echo $row['nomb_Categoria'];
 										echo "</option>";
 									}
-
 								 ?>
 							</select>
 						</td>
