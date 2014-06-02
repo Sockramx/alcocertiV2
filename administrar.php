@@ -9,21 +9,16 @@
 <body>
 	<div>
 		<form action="procesar.php" method="POST">
-			<table>
-				<tr>
-					<td>Usuario:</td>
-					<td><input type="text" name="usuario"></td>
-				</tr>
-				<tr> 
-					<td>Password:</td>
-					<td><input type="password" name="password"></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td><input type="submit" value="ENVIAR"></td>
-				</tr>
-			</table>
+			<li><label>Usuario:</label><input type="text" name="usuario"></td></li>
+			<li><label>Password:</label><input type="password" name="password"></li>
+			<li><input type="submit" value="ENVIAR"></li>
 		</form>
 	</div>
+	<div id="logo">
+		<img src="imagenes/">
+	</div>
+	<footer>
+		<h2>AlcocerTi</h2>
+	</footer>
 </body>
 </html>

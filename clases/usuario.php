@@ -1,5 +1,7 @@
 <?php 
 
+include ("clases/conexion.php");
+
 
 class Usuario{
 	var $nombre;
@@ -21,6 +23,8 @@ class Usuario{
 	}
 	function registrar_usuario(){
 	
+
+		echo $this->nombre;
 		$conexion = new Conexion();
 		$conec = $conexion->conectar();
 
@@ -37,6 +41,10 @@ class Usuario{
 
 		$sql = "SELECT id_Usuario FROM Usuario WHERE nomb_Usuario='$this->nombre'";
 		$rs=mysql_query($sql,$conec);
+
+		while($row=mysql_fetch_array($rs)){
+			$rs=$row['id_Usuario'];
+		}
 		
 		return $rs;
 	}

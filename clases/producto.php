@@ -1,5 +1,5 @@
 <?php 
-require_once ("conexion.php");
+
 
 class Producto{
 	var $nombre;
@@ -18,7 +18,6 @@ class Producto{
 		$this->categoria = $id_categoria;
 		$this->usuario = $id_usuario;
 		
-
 	}
 	function registrar_producto(){
 
@@ -33,7 +32,7 @@ class Producto{
 		$conexion = new Conexion();
 		$conec = $conexion->conectar();
 
-		$sql = "SELECT * FROM Producto WHERE id_Categoria='$id_Categoria' ORDER BY nomb_Producto";
+		$sql = "SELECT * FROM Producto WHERE id_Categoria=".$id_Categoria." ORDER BY nomb_Producto";
 		$rs = mysql_query($sql,$conec);
 		return $rs;
 	}

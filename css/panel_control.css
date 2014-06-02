@@ -1,35 +1,46 @@
 /*estilos del Panel de control */
 
-body{
-	width: 1200px;
+body,html{
+	height: 100%;
+	margin: 0;
+}
+body {
+	max-width: 1200px;
 	margin: 0 auto;
 }
-nav{
-	background: #CCCCCC;
-	width: 20%;
+header {
+	background-color: #EDEDED;
+	padding: 2em 0 2em 0;
 }
-nav ul li {
-	color:#FFFFFF;
+header li {
+	text-align: right;
 	list-style: none;
+}
+nav {
 	padding: 0.5em 0 0.5em 0;
-	background: #6A6A6A;
-	margin: 5px 0 5px 0;
-	text-align: center;
+	color: #EDEDED;
+	background: #000000
+}
+nav ul li{
+	padding: 0 0.5em 0 0.5em;
+	display: inline-block;
 }
 nav ul li:hover{
-	color:#EB1B39;
+	color: #F51013;
 }
 #content{
-	width: 78%;
-	background: #EDEDED;
+	height: 90%;
 }
-nav,#content{
-	display: inline-block;
-	vertical-align: top;
+#content #usuario {
+	position: relative;
 }
-header{
-	background: #FF4907;
-	margin: 0px;
-	padding: 1em 0 1em 0;
+#content #usuario form{
+	width: 350px;
 }
 
+footer{
+	text-align: center;
+	padding: 1em 0 1em 0;
+	background: #000000;
+	color:#EDEDED;
+}

@@ -18,11 +18,10 @@
 }
 #lista_categorias ul li{
 	background:#727272;
-	border-radius: 20px 20px 20px 20px;
 	border-bottom: 1px solid #EDEDED;
 	margin-top: 2px;
 	display: block;
-	padding: 1em 0 1em 0;
+	padding: 1.5em 0 1.5em 0;
 }
 #lista_categorias ul li:hover{
 	background:#E57070;

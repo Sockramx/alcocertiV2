@@ -12,7 +12,7 @@ include ('clases/categoria.php');
 
  ?>
 
-<html lang="en">
+<html lang="es">
 <head>
 	<meta charset="UTF-8"/>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
@@ -20,20 +20,18 @@ include ('clases/categoria.php');
 
 	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="js/js_panel_control.js"></script>
-	<title>Document</title>
+	<title>Panel de control</title>
 </head>
 <body>
 	<header>
-		<p>
-		<a href="cerrar.php">cerrar session</a>
-		</p>
+		<li><a href="cerrar.php">cerrar session</a></li>
 	</header>
 	
 	<nav>
 		<ul>
-			<li id="opc_usuario">Usuarios</li>
-			<li id="opc_producto">Productos</li>
-			<li id="opc_categoria">Categorias</li>
+			<li id="opc_usuario">Registrar Usuarios</li>
+			<li id="opc_producto">Registrar Productos</li>
+			<li id="opc_categoria">Registrar Categorias</li>
 		</ul>
 	</nav>
 	<div id="content">
@@ -106,7 +104,7 @@ include ('clases/categoria.php');
 									$categoria = new Categoria();
 									$rs=$categoria->obtener_categoria();
 									
-									while($row=mysql_fetch_array($rs)){
+									while($row= mysql_fetch_array($rs)){
 										echo "<option>";
 										echo $row['nomb_Categoria'];
 										echo "</option>";
@@ -121,7 +119,10 @@ include ('clases/categoria.php');
 					</tr>
 					<tr>
 						<td></td>
-						<td><input type="submit" value="Registrar"></td>
+						<td>
+							<input type="submit" value="Registrar">
+							<input type="reset" value="Nuevo">
+						</td>
 					</tr>
 				</table>
 			</form>
@@ -140,7 +141,23 @@ include ('clases/categoria.php');
 					</tr>
 				</table>
 			</form>
+			<h2>Borrar Categoria</h2>
+			<form action="procesar_categoria.php" method="POST">
+				<table>
+					<tr>
+						<td>Categoria</td>
+						<td><input type="text" name="nombre_categoria"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><input type="submit" value="Borrar"></td>
+					</tr>
+				</table>
+			</form>
 		</section>
 	</div>
+	<footer>
+		<h4>AlcocerTi</h4>
+	</footer>	
 </body>
 </html>

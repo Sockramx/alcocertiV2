@@ -31,8 +31,6 @@
 	<title>Alcerti.com | Mayorista en Tecnología</title>
 </head>
 <body>
-
-	<!--
 	<header>
 		<figure id="logo_alcocerti">
 			<img src="" alt="logoalcocer">
@@ -43,14 +41,14 @@
 			</p>
 		</div>
 	</header>
--->
+
 	<nav>
 		<ul id="menu_principal">
 			<li><a href="index.php">Inicio</a></li>
 			<li id="producto">Productos</li>
-			<li>Servicios</li>
-			<li>Contacto</li>
-			<li>Locales</li>
+			<li id="servicios">Servicios</li>
+			<li id="contacto">Contacto</li>
+			<li id="locales">Locales</li>
 		</ul>
 		<ul id="redes_sociales">
 			<li>Twitter</li>

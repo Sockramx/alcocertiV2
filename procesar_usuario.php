@@ -21,7 +21,7 @@ if(isset($nombre_usuario) && !empty($nombre_usuario) && isset($apellido_usuario)
 	
 	$usuario = new Usuario($nombre_usuario,$apellido_usuario,$dni_usuario,$password_usuario,$telefono_usuario,$celular_usuario);
 	$usuario->registrar_usuario();
-
+	echo "test2";
 }else{
 	echo "Ingrese los todos los campos";
 }

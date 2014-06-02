@@ -16,9 +16,10 @@ $(document).ready(function(){
 								.html(Handlebars
 									.compile('\
 											{{#objects}}\
-												<li>\
+												<li id={{id}}>\
 													<img src={{ imagen }}>\
 													<h4>{{ nombre }}</h4>\
+													<p>{{ descripcion }}</p>\
 												</li>\
 											{{else}}\
 											<div>\
@@ -40,6 +41,14 @@ $(document).ready(function(){
 			});
 			
 		});
-	});	
+	});
+	$("#servicios").click(function(){
+		$("#content").load("servicios.php");
+	});
+	$("#contacto").click(function(){
+		$("#content").load("contacto.php");
+	});$("#locales").click(function(){
+		$("#content").load("locales.php");
+	});
 });
 /*con esto cargo productos.php en el contenedor principal */

@@ -19,11 +19,11 @@ $categoria = new Categoria();
 				$nomb_Categoria = $row['nomb_Categoria'];
 
 				echo "<li >";
-				echo "<a data-id='$id_Categoria' class='categoria' href='#content_productos'>";
+				echo "<a data-id='$id_Categoria' class='categoria' href='#lista_productos'>";
 				echo $row['nomb_Categoria'];
 				echo "</a>";
 				echo "</li>";
-			}
+			} 	 	
 			/*Aqui cargo las categorias mo estacod*/
 		 ?>
 	</ul>

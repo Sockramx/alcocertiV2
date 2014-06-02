@@ -32,12 +32,13 @@ class Categoria{
 
 		$conexion = new Conexion();
 		$conec = $conexion->conectar();
-
-		echo $categoria_producto;
-
+		
 		$sql = "SELECT id_Categoria FROM Categoria WHERE nomb_Categoria='$categoria_producto'";
 		$rs=mysql_query($sql,$conec);
-		echo $rs;
+		
+		while($row=mysql_fetch_array($rs)){
+			$rs=$row['id_Categoria'];
+		}
 		return $rs;
 	}
 	function actualizar_categoria(){

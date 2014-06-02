@@ -31,11 +31,11 @@ header #slogan p{
 
 /* Menu principal */
 nav{	
-	background: #000000;
+	background: #F2F2F2;
 
 }
 #menu_principal{
-	color: #FFFFFF;
+	color: #727272;
 }
 #menu_principal li{
 	border-bottom: 1px solid #EDEDED;
@@ -52,7 +52,7 @@ nav{
 	display: none;
 }
 #menu_principal li a{
-	color: #FFFFFF;
+	color: #727272;
 	text-decoration: none;
 }
 #menu_principal li a:hover{
@@ -76,13 +76,12 @@ nav{
 #content #fondo section{
 	background:#FF5C08;
 	margin: 0px;
-	opacity: 0.8;
 	height: 100%;
 
 }
 #content #fondo section h1{
-	color:#FFFFFF;
-	background:#5E5E5E;
+	color:#757575;
+	background:#EDEDED;
 	font-size: 35px;
 	padding-top: 5em;
 	padding-bottom: 5em;
@@ -100,7 +99,6 @@ nav{
 }
 #content #fondo section article ul li img{
 	border-radius: 100px;
-	
 	background: #E8E8E8;
 	height: 180px;
 	width: 180px;
@@ -112,9 +110,7 @@ nav{
 /* footer */
 
 
-.l_prod{
-	
-}
+
 footer {
 	background: #000000;
 	color:#FFFFFF;
