@@ -5,11 +5,33 @@
 	padding: 7em 0 7em 0;
 	text-align: center;
 }
+#content_servicio #servicios ul h3{
+	padding: 1em 0 1em 0;
+	font-size: 20px;
+}
 #content_servicio #servicios ul li {
+	color: #585858;
 	vertical-align: top;
 	display: inline-block;
-	padding: 1em;
 	width: 250px;
+	height: 250px; 
+
+
+	transition: background 0.5s;
+	-webkit-transition: background 0.5s;
+}
+#content_servicio #servicios ul li:hover {
+	color: #F3F3F3;
+	background: rgba(0, 0, 0, 0.7);
+	
+}
+#content_servicio #servicios ul li img{
+	border-radius: 100px;
+	height: 150px;
+	width: 150px;
+}
+#content_servicio #servicios ul li h4{
+	font-size: 15px;
 }
 #content_servicio #soporte,#ventas,#instalacion{
 	padding: 7em 0 7em 0;
