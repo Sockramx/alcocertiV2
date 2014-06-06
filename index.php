@@ -4,9 +4,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-	<link rel="stylesheet" href="css/normalize.css"/>
-	<link rel="stylesheet" href="css/base.css"/>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+	<link rel="stylesheet" type="text/css" href="css/base.css"/>
 	<link rel="stylesheet" type="text/css" href="css/producto.css"/>
+	<link rel="stylesheet" type="text/css" href="css/servicio.css"/>
 	<link rel="stylesheet" href="css/mediaqueries.css"/>
 	
 	<script src="js/jquery-1.11.0.min.js"></script>
@@ -27,18 +28,17 @@
 	    }
 	</script>
 	<script src="js/js.js"></script>
-
 	<title>Alcerti.com | Mayorista en Tecnología</title>
 </head>
 <body>
 	<header>
 		<figure id="logo_alcocerti">
-			<img src="" alt="logoalcocer">
+			<img src="imagenes/logo/logo-principal.png" alt="logoalcocer">
 		</figure>
 		<div id="slogan">
-			<p>
+			<h1>
 				Venta de accesrios y suministros de computo en general.
-			</p>
+			</h1>
 		</div>
 	</header>
 
@@ -51,34 +51,82 @@
 			<li id="locales">Locales</li>
 		</ul>
 		<ul id="redes_sociales">
-			<li>Twitter</li>
-			<li>Facebook</li>
-			<li>google+</li>
+			<li class="btn-facebook btn"><a href="https://www.facebook.com/acocer.ti.7" target="_blank">facebook</a></li>
+			<li class="btn-twitter btn"><a href="https://twitter.com/alcocerti" target="_blank">twitter</a></li>
+			<li class="btn-google btn"><a href="https://plus.google.com/u/0/102461840679390247422/posts" target="_blank">google+</a></li>
 		</ul>
 	</nav>
 	<div id="content">
 		<!-- contenedor principal -->
 		<div id="fondo">
-			<section>
-				<h1>Lo ultimo en Tecnología</h1>
-				<figure>
-					<img src="" alt="">
-				</figure>
+			
+			<div id="promociones">
+				<ul>
+					<li>
+						<figure>
+							<img src="imagenes/promociones/promo1.jpg" alt="">
+				 		</figure>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus labore molestiae facere error quaerat! Dolores, delectus quaerat voluptatum ipsum omnis iste labore obcaecati illo nostrum tempora illum placeat veritatis quidem!
+						</p>
+					</li>
+					<li>
+						<figure>
+							<img src="imagenes/promociones/promo1.jpg" alt="">
+						</figure>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus labore molestiae facere error quaerat! Dolores, delectus quaerat voluptatum ipsum omnis iste labore obcaecati illo nostrum tempora illum placeat veritatis quidem!
+						</p>
+					</li>
+				</ul>
+			</div>
+			<section> 
+				<h4>Nuestro equipo de trabajo</h4>
 				<article>
 					<ul>
-						<li><img src="imagenes/iconos/prod.jpg"></li>
-						<li><img src="imagenes/iconos/prod.jpg"></li>
-						<li><img src="imagenes/iconos/prod.jpg"></li>
-						<li><img src="imagenes/iconos/prod.jpg"></li>
-						
+						<li>
+							<img src="imagenes/iconos/prod.jpg">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								
+							</p>	
+						</li>
+						<li>
+							<img src="imagenes/iconos/prod.jpg">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								
+							</p>	
+						</li>
+						<li>
+							<img src="imagenes/iconos/prod.jpg">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								
+							</p>	
+						</li>
+						<li>
+							<img src="imagenes/iconos/prod.jpg">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								
+							</p>	
+						</li>
 					</ul>
 				</article>
 			</section>
 		</div>
 	</div>	
 	<footer>
-		<h4>AlcocerTi</h4>
-
+		<h3>Alcocerti</h3>
 	</footer>
 </body>
 </html>
+
+
+
+

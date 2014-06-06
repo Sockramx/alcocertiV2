@@ -14,20 +14,22 @@
 }
 #lista_categorias ul li a{
 	text-decoration: none;
-	color: #EDEDED;
+	color: #EFEFEF;
+	padding: 1.2em 5em 1.2em 5em;
 }
 #lista_categorias ul li{
-	background:#727272;
+	background: #C44522;
 	border-bottom: 1px solid #EDEDED;
+	border-radius: 6px 6px 6px 6px;
 	margin-top: 2px;
 	display: block;
-	padding: 1.5em 0 1.5em 0;
+	padding: 1.2em 0 1.2em 0;
 }
 #lista_categorias ul li:hover{
-	background:#E57070;
+	background: #E86607;
 }
 #lista_categorias ul li a:hover{
-	color: #AD0000;
+	color: #EFEFEF;
 }
 
 #content_productos{

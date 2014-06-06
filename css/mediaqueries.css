@@ -1,9 +1,25 @@
 @media screen and (min-width: 320px){
-
+	
 }
 
 
 @media screen and (min-width: 768px){
+	header #logo_alcocerti img{
+		width: 100%;
+	}
+	header #logo_alcocerti{
+		width: 30%;
+	}
+	header #slogan{
+		width: 50%;
+	}
+	header #slogan h1{
+		font-size: 17px;
+	}
+	header #logo_alcocerti,#slogan{
+		vertical-align: middle;
+		display: inline-block;
+	}
 	nav{
 		padding: 1.5em 0 1.5em 0;
 	}
@@ -34,16 +50,30 @@
 	}
 	#redes_sociales li{
 		display: inline-block;
+		margin: 2px 0 2px 0;
 	}
 
 	/*Contenedor */
+	#content #fondo #promociones ul li{
+		padding: 3em 0 3em 0;
+	}
+	#content #fondo #promociones ul li p {
+		width: 60%;
+	}
+	#content #fondo #promociones ul li figure{
+		width: 30%;
+	}
+	#content #fondo #promociones ul li p,figure{
+		vertical-align: middle;
+		display: inline-block;
+	}
 	#lista_productos ul li{
 		margin: 5px;
 	}
 	#lista_categorias,#content_productos{
 		padding-top: 2em;
 		display: inline-block;
-		vertical-align: top;
+		vertical-align: middle;
 	}
 	#lista_categorias{
 		width: 20%;
@@ -51,9 +81,26 @@
 	#content_productos{
 		width: 75%;
 	}
+
+
+	/*footer*/
+	footer li{
+		max-width: 400px;
+	}
 }
 
 
 @media screen and (min-width: 1024px){
-	
+	header #logo_alcocerti img{
+		width: 100%;
+	}
+	header #logo_alcocerti{
+		width: 30%;
+	}
+	header #slogan{
+		width: 60%;
+	}
+	header #slogan h1{
+		font-size: 30px;
+	}
 }

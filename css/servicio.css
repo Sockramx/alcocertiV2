@@ -1,0 +1,25 @@
+#content_servicio{
+	margin-top: 28px;
+}
+#content_servicio #servicios {
+	padding: 7em 0 7em 0;
+	text-align: center;
+}
+#content_servicio #servicios ul li {
+	vertical-align: top;
+	display: inline-block;
+	padding: 1em;
+	width: 250px;
+}
+#content_servicio #soporte,#ventas,#instalacion{
+	padding: 7em 0 7em 0;
+}
+#content_servicio #soporte{
+	background: #0073E8;
+}
+#content_servicio #ventas{
+	background: #F00000;
+}
+#content_servicio #instalacion{
+	background: #FFC91F
+}

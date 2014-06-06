@@ -1,13 +1,15 @@
+/* Fuentes*/
+
+@import url(http://fonts.googleapis.com/css?family=Francois+One); /* h1 */
+
+
 /*Estilo base de la pagina */
 *{
 	margin: 0px;
 	padding: 0px;
 }
 body{
-
-	background: #EDEDED;
-}
-body{
+	background: #F3F3F3;
 	margin: 0px;
 	height: 100%;
 }
@@ -15,24 +17,29 @@ body{
 /* cabecera */
 
 header {
-	background-image: url("../imagenes/banner/banner6.jpg");
-	background-size: 100%;
-	background-repeat: no-repeat;
+	background: #F3F3F3;
 }
-header #logo_alcocerti{
+header #logo_alcocerti img{
+	width: 100%;
+	padding: 1em 0 1em 0;
 	margin: 0 auto;
 	text-align: center;
-	width: 150px;
 }
-header #slogan p{
+
+header #slogan h1{
+	font-size: 20px;
 	color:#353535;
+	text-align: center;
+	padding: 0.5em 0 2em 0;
+	font-family: 'Francois One', sans-serif;
 }
 
 
 /* Menu principal */
 nav{	
-	background: #F2F2F2;
-
+	background: #EDEDED;
+	border-top: 0.5px solid #F3F3F3;
+	border-bottom: 0.5px solid #F3F3F3;
 }
 #menu_principal{
 	color: #727272;
@@ -74,19 +81,45 @@ nav{
 
 }
 #content #fondo section{
-	background:#FF5C08;
+	background:#C44522;
 	margin: 0px;
 	height: 100%;
 
 }
-#content #fondo section h1{
+#content #fondo section h4{
 	color:#757575;
-	background:#EDEDED;
+	background: #EDEDED;
 	font-size: 35px;
-	padding-top: 5em;
-	padding-bottom: 5em;
+	margin-top: 20px;
+	padding: 4em 0 4em 0;
 	text-align: center;
 	width: 100%;
+}
+#content #fondo #promociones{
+	margin: 28px 0 28px 0;
+	text-align: center;
+	background: #FFFFFF;	
+}
+#content #fondo #promociones ul li{
+	padding: 0.5em 0 0.5em 0;
+	display: block;
+
+}
+#content #fondo #promociones ul li {
+	width: 100%;
+}
+#content #fondo #promociones ul li figure{
+
+}
+#content #fondo #promociones ul li figure img {
+	widows: 250px;
+	height: 150px;
+}
+#content #fondo #promociones ul li p {
+	
+}
+#content #fondo #promociones ul li p,figure{
+	 display: block;
 }
 #content #fondo section article{
 	text-align: center;
@@ -94,17 +127,36 @@ nav{
 	padding-bottom: 4em;
 }
 #content #fondo section article ul li{
+	border-radius: 100px;
 	list-style: none;
 	display: inline-block;
 }
+#content #fondo section article ul li p{
+	color: #EDEDED;
+	padding: 1em 0 1em 0;
+	font-size: 13px;
+	width: 250px;
+
+}
 #content #fondo section article ul li img{
 	border-radius: 100px;
-	background: #E8E8E8;
+	
 	height: 180px;
 	width: 180px;
+
+	transition: transform 0.5s;
+	-o-transition: transform 0.5s;
+	-ms-transition: transform 0.5s;
+	-moz-transition: transform 0.5s;
+	-webkit-transition: transform 0.5s;
 }
 #content #fondo section article ul li img:hover{
-	background: #FF3434;
+	transform: rotate(10deg);	
+
+	-o-transform: rotate(10deg);
+	-ms-transform: rotate(10deg);	
+	-moz-transform: rotate(10deg);	
+	-webkit-transform: rotate(10deg);	
 }
 
 /* footer */
@@ -115,7 +167,55 @@ footer {
 	background: #000000;
 	color:#FFFFFF;
 	padding: 4em 0 4em 0;
-}
-footer h4{
 	text-align: center;
 }
+footer li{
+	width: 320px;
+	text-align: center;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+/* redes sociales */
+.btn a{
+	padding: 0 0.5em 0 0.5em;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+.btn-facebook{
+	font-size: 13px;
+	background: #003B85;
+	border-radius: 5px 5px 5px 5px; 
+	padding: 0.3em;
+	text-align: center;
+	width: 70px;
+}
+.btn-twitter{
+	font-size: 13px;
+	background: #6BC2FB;
+	border-radius: 5px 5px 5px 5px; 
+	padding: 0.3em;
+	text-align: center;
+	width: 70px;
+}
+.btn-google{
+	font-size: 13px;
+	background: #D43E33;
+	border-radius: 5px 5px 5px 5px; 
+	padding: 0.3em;
+	text-align: center;
+	width: 70px;
+}
+
+.btn-facebook:hover{
+	box-shadow: 0px 0px 1px 2px #003B85;
+}
+.btn-twitter:hover{
+	box-shadow: 0px 0px 1px 2px #6BC2FB;
+}
+
+.btn-google:hover{
+	box-shadow: 0px 0px 1px 2px #D43E33;
+}
+
