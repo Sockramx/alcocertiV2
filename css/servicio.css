@@ -6,6 +6,7 @@
 	text-align: center;
 }
 #content_servicio #servicios ul h3{
+	color: #AFAFAF;
 	padding: 1em 0 1em 0;
 	font-size: 20px;
 }
@@ -35,13 +36,53 @@
 }
 #content_servicio #soporte,#ventas,#instalacion{
 	padding: 7em 0 7em 0;
+	text-align: center;
 }
 #content_servicio #soporte{
 	background: #0073E8;
 }
+#content_servicio #soporte h4{
+	font-size: 35px;
+	padding: 1em 0 1em 0;
+}
+#content_servicio #soporte figure{
+	width: 30%;
+}
+#content_servicio #soporte p{
+	width: 60%;
+}
+#content_servicio #soporte figure,p{
+	display: inline-block;
+}
 #content_servicio #ventas{
 	background: #F00000;
 }
+#content_servicio #ventas h4{
+	font-size: 35px;
+	padding: 1em 0 1em 0;
+}
+#content_servicio #ventas figure{
+	width: 30%;
+}
+#content_servicio #ventas p{
+	width: 60%;
+}
+#content_servicio #ventas figure,p{
+	display: inline-block;
+}
 #content_servicio #instalacion{
 	background: #FFC91F
+}
+#content_servicio #instalacion h4{
+	font-size: 35px;
+	padding: 1em 0 1em 0;
+}
+#content_servicio #instalacion figure{
+	width: 30%;
+}
+#content_servicio #instalacion p{
+	width: 60%;
+}
+#content_servicio #instalacion figure,p{
+	display: inline-block;
 }

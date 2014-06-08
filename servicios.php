@@ -4,19 +4,19 @@
 			<h3>Te ofrecemos los siguientes servicios</h3>
 			<li>
 				<figure>
-					<a href=""><img src="imagenes/iconos/" alt="Ventas"></a>
+					<a href="#ventas"><img src="imagenes/iconos/" alt="Ventas"></a>
 				</figure>
 				<h4>Venta de Accesarios de Computo al Mayoreo</h4>
 			</li>
 			<li>
 				<figure>
-					<a href=""><img src="imagenes/iconos/" alt="Soporte"></a>
+					<a href="#soporte"><img src="imagenes/iconos/" alt="Soporte"></a>
 				</figure>
 				<h4>Soporte Técnico para Empresas</h4>
 			</li>
 			<li>
 				<figure>
-					<a href=""><img src="imagenes/iconos/" alt="Instalación"></a>
+					<a href="#instalacion"><img src="imagenes/iconos/" alt="Instalación"></a>
 				</figure>
 				<h4>Instalación y configuración de Software</h4>
 			</li>
@@ -27,17 +27,26 @@
 		<p>
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, eius, quas, fuga reiciendis cupiditate suscipit placeat optio totam eveniet minus quo laborum asperiores nemo facilis alias expedita sit ex sed?
 		</p>
+		<figure>
+			<img src="" alt="soporte">
+		</figure>
 	</div>
 	<div id="ventas">
-		<h4>Ventas de Accsesorios de Computo</h4>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, eius, quas, fuga reiciendis cupiditate suscipit placeat optio totam eveniet minus quo laborum asperiores nemo facilis alias expedita sit ex sed?
-		</p>
+		<h4>Ventas de Accesorios de Computo</h4>
+			<figure>
+				<img src="" alt="ventas">
+			</figure>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, eius, quas, fuga reiciendis cupiditate suscipit placeat optio totam eveniet minus quo laborum asperiores nemo facilis alias expedita sit ex sed?
+			</p>
 	</div>
 	<div id="instalacion">
 		<h4>Instalación y Configuracion de Software</h4>
 		<p>
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, eius, quas, fuga reiciendis cupiditate suscipit placeat optio totam eveniet minus quo laborum asperiores nemo facilis alias expedita sit ex sed?
 		</p>
+		<figure>
+			<img src="" alt="instalacion">
+		</figure>
 	</div>
 </div>
