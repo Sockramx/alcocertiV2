@@ -2,21 +2,21 @@
 	<div id="servicios">
 		<ul>
 			<h3>Te ofrecemos los siguientes servicios</h3>
-			<li>
+			<li class="ventas">
 				<figure>
-					<a href="#ventas"><img src="imagenes/iconos/" alt="Ventas"></a>
+					<a href="#ventas"><img src="imagenes/iconos/carro-compras.png" alt="Ventas"></a>
 				</figure>
 				<h4>Venta de Accesarios de Computo al Mayoreo</h4>
 			</li>
-			<li>
+			<li class="soporte">
 				<figure>
-					<a href="#soporte"><img src="imagenes/iconos/" alt="Soporte"></a>
+					<a href="#soporte"><img src="imagenes/iconos/btn_soporte.png" alt="Soporte"></a>
 				</figure>
 				<h4>Soporte Técnico para Empresas</h4>
 			</li>
-			<li>
+			<li class="instalacion" >
 				<figure>
-					<a href="#instalacion"><img src="imagenes/iconos/" alt="Instalación"></a>
+					<a href="#instalacion"><img src="imagenes/iconos/btn_conf.png" alt="Instalación"></a>
 				</figure>
 				<h4>Instalación y configuración de Software</h4>
 			</li>

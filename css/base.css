@@ -140,11 +140,16 @@ nav{
 	-webkit-transition: transform 0.5s;
 }
 #content #fondo section article ul li img,p{
-	display: block;
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 5px;
+}
+#content #fondo section article ul li:hover {
+	background: #4C4C4C;
 }
 #content #fondo section article ul li img:hover{
 	transform: rotate(10deg);	
-
+	
 	-o-transform: rotate(10deg);
 	-ms-transform: rotate(10deg);	
 	-moz-transform: rotate(10deg);	
