@@ -38,7 +38,7 @@ class Categoria{
 		$sql = "SELECT id_Categoria FROM Categoria WHERE nomb_Categoria='$categoria_producto'";
 		$rs=mysql_query($sql,$conec);
 		
-		while($row=mysql_fetch_array($rs)){
+		while($row=@mysql_fetch_array($rs)){ /*el @ es para no mostrar el error */
 			$rs=$row['id_Categoria'];
 		}
 		return $rs;
