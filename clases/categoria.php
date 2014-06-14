@@ -5,11 +5,13 @@ require_once("conexion.php"); /* require funciona mejor  q un include */
 class Categoria{
 	var $nombre;
 
-	function __construct($nombre){
-		$this->nombre = $nombre;
+	function __construct(){
+		
 	}
-	function registrar_categoria(){
+	function registrar_categoria($nombre){
 
+		$this->nombre = $nombre;
+		
 		$conexion = new Conexion();
 		$conec = $conexion->conectar();
 

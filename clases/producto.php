@@ -9,7 +9,12 @@ class Producto{
 	var $categoria;
 	var $usuario;
 
-	function __construct($nombre,$marca,$descripcion,$img_producto,$id_categoria,$id_usuario){
+	function __construct(){
+
+		
+		
+	}
+	function registrar_producto($nombre,$marca,$descripcion,$img_producto,$id_categoria,$id_usuario){
 
 		$this->nombre = $nombre;
 		$this->marca = $marca;
@@ -18,9 +23,6 @@ class Producto{
 		$this->categoria = $id_categoria;
 		$this->usuario = $id_usuario;
 		
-	}
-	function registrar_producto(){
-
 		$conexion = new Conexion();
 		$conec = $conexion->conectar();
 

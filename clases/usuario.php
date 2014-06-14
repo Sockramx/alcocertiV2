@@ -11,19 +11,20 @@ class Usuario{
 	var $telefono;
 	var $celular;
 
-	function __construct($nombre,$apellido,$dni,$password,$telefono,$celular){
+	function __construct(){
 
+		 
+		
+	}
+	function registrar_usuario($nombre,$apellido,$dni,$password,$telefono,$celular){
+	
 		$this->nombre = $nombre;
 		$this->apellido = $apellido;
 		$this->dni = $dni;
 		$this->password = $password;
 		$this->telefono = $telefono;
-		$this->celular = $celular; 
+		$this->celular = $celular;
 		
-	}
-	function registrar_usuario(){
-	
-
 		echo $this->nombre;
 		$conexion = new Conexion();
 		$conec = $conexion->conectar();

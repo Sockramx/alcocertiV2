@@ -32,7 +32,6 @@ $marca_producto = $_POST['marca_producto'];
 
 
 
-
 /* Obtenemos el id del Usuario */
 
 $usuario = new Usuario($nombre_usuario);
