@@ -49,12 +49,6 @@ class Usuario{
 		
 		return $rs;
 	}
-	function actualizar_usuario(){
-
-	}
-	function borrar_usuario(){
-		
-	}
 
 }
  ?>

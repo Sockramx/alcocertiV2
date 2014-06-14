@@ -43,11 +43,5 @@ class Categoria{
 		}
 		return $rs;
 	}
-	function actualizar_categoria(){
-
-	}
-	function borrar_categoria(){
-		
-	}
 }
  ?>

@@ -38,10 +38,6 @@ class Producto{
 		$rs = mysql_query($sql,$conec);
 		return $rs;
 	}
-	function actualizar_producto(){
-
-	}
-	function borrar_producto(){}
 }
 
  ?>
