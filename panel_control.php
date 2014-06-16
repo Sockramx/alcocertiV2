@@ -24,7 +24,7 @@ include ('clases/categoria.php');
 </head>
 <body>
 	<header>
-		<li><a href="cerrar.php">cerrar session</a></li>
+		<li><a class="btn-salir"href="cerrar.php">Salir</a></li>
 	</header>
 	
 	<nav>
@@ -36,123 +36,67 @@ include ('clases/categoria.php');
 	</nav>
 	<div id="content">
 		<section id="algo">
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
+			<img src="imagenes/logo/logo-principal.png">
 		</section>
 		<section id="usuario">
 			<h2>Registrar Usuario</h2>
 			<form action="procesar_usuario.php" method="POST">
-				<table>
-					<tr>
-						<td>Nombre:</td>
-						<td><input type="text" name="nombre_usuario"></td>
-					</tr>
-					<tr>
-						<td>Apellido:</td>
-						<td><input type="text" name="apellido_usuario"></td>
-					</tr>
-					<tr>
-						<td>DNI:</td>
-						<td><input type="text" name="dni_usuario"></td>
-					</tr>
-					<tr>
-						<td>Password:</td>
-						<td><input type="password" name="password_usuario"></td>
-					</tr>
-					<tr>
-						<td>Telefono:</td>
-						<td><input type="text" name="telefono_usuario"></td>
-					</tr>
-					<tr>
-						<td>Celular:</td>
-						<td><input type="text" name="celular_usuario"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td><input type="submit" value="registrar"></td>
-					</tr>
-				</table>
+						<label>Nombre:</label><br>
+						<input type="text" name="nombre_usuario"><br>
+					
+						<label>Apellido:</label><br>
+						<input type="text" name="apellido_usuario"><br>
+					
+						<label>DNI:</label><br>
+						<input type="text" name="dni_usuario"><br>
+				
+						<label>Password:</label><br>
+						<input type="password" name="password_usuario"><br>
+					
+						<label>Telefono:</label><br>
+						<input type="text" name="telefono_usuario"><br>
+					
+						<label>Celular:</label><br>
+						<input type="text" name="celular_usuario"><br>
+						<input class="btn-form" type="submit" value="registrar"><br>
+				
 			</form>
 		</section>
 		<section id="producto">
 			<h2>Registrar Producto</h2>
 			<form action="procesar_producto.php" method="POST" enctype="multipart/form-data">
-				<table>
-					<tr>
-						<td>Nombre:</td>
-						<td><input type="text" name="nombre_producto"></td>
-					</tr>
-					<tr>
-						<td>Descripción:</td>
-						<td><textarea name="descripcion_producto" cols="30" rows="10"></textarea></td>
-					</tr>
-					<tr>
-						<td>Imagen:</td>
-						<td><input type="file" name="imagen"></td>
-					</tr>
-					<tr>
-						<td>Categoria</td>
-						<td>
-							<select name="categoria_producto">
-								<?php 
-									$categoria = new Categoria();
-									$rs=$categoria->obtener_categoria();
-									
-									while($row= mysql_fetch_array($rs)){
-										echo "<option>";
-										echo $row['nomb_Categoria'];
-										echo "</option>";
-									}
-								 ?>
-							</select>
-						</td>
-					</tr>
-					<tr>
-						<td>Marca:</td>
-						<td><input type="text" name="marca_producto"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td>
-							<input type="submit" value="Registrar">
-							<input type="reset" value="Nuevo">
-						</td>
-					</tr>
-				</table>
+				<label>Nombre:</label>
+					<input type="text" name="nombre_producto"><br>
+					<label>Descripción:</label><br>
+					<textarea name="descripcion_producto" cols="30" rows="10"></textarea><br>
+					<label>Imagen:</label>
+					<input type="file" name="imagen"><br>
+					<label>Categoria:</label>
+					<select name="categoria_producto"><br>
+						<?php 
+							$categoria = new Categoria();
+							$rs=$categoria->obtener_categoria();
+			
+							while($row= mysql_fetch_array($rs)){
+								echo "<option>";
+								echo $row['nomb_Categoria'];
+								echo "</option>";
+							}
+							?>
+					</select>
+					<br>
+					<label>Marca:</label>
+					<input type="text" name="marca_producto"><br>
+					<input class="btn-form" type="submit" value="Registrar">
+					<input class="btn-form" type="reset" value="Nuevo"><br>	
 			</form>
 		</section>
 		<section id="categoria">
 			<h2>Registrar Categoria</h2>
 			<form action="procesar_categoria.php" method="POST">
-				<table>
-					<tr>
-						<td>Categoria</td>
-						<td><input type="text" name="nombre_categoria"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td><input type="submit" value="registrar"></td>
-					</tr>
-				</table>
-			</form>
-			<h2>Borrar Categoria</h2>
-			<form action="procesar_categoria.php" method="POST">
-				<table>
-					<tr>
-						<td>Categoria</td>
-						<td><input type="text" name="nombre_categoria"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td><input type="submit" value="Borrar"></td>
-					</tr>
-				</table>
+				<label>Categoria</label>
+				<input type="text" name="nombre_categoria"><br>
+				<input class="btn-form" type="submit" value="registrar">
 			</form>
 		</section>
 	</div>

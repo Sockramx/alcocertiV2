@@ -15,7 +15,7 @@
 #lista_categorias ul li a{
 	text-decoration: none;
 	color: #EFEFEF;
-	padding: 1.2em 5em 1.2em 5em;
+	padding: 1.2em 1em 1.2em 1em;
 }
 #lista_categorias ul li{
 	background: #C44522;
@@ -50,7 +50,13 @@
 
 }
 #content_productos #lista_productos ul li img{
-	height: 250px;
-	width: 250px;
+	height: 200px;
+	width: 200px;
+}
+#content_productos #lista_productos ul #logo2 {
+	text-align: center;
+}
+#content_productos #lista_productos ul #logo2 img{
+	width: 100%;
 }
 

@@ -9,7 +9,7 @@ body {
 	margin: 0 auto;
 }
 header {
-	background-color: #EDEDED;
+	background-color: #C44522;
 	padding: 2em 0 2em 0;
 }
 header li {
@@ -17,9 +17,10 @@ header li {
 	list-style: none;
 }
 nav {
+	border-radius: 4px 4px 4px 4px;
 	padding: 0.5em 0 0.5em 0;
 	color: #EDEDED;
-	background: #000000
+	background: #000000;
 }
 nav ul li{
 	padding: 0 0.5em 0 0.5em;
@@ -29,18 +30,50 @@ nav ul li:hover{
 	color: #F51013;
 }
 #content{
-	height: 90%;
+	text-align: center;
+	height: 100%;
+	width: 100%;
 }
+#content #algo{
+	text-align: center;
+}
+
 #content #usuario {
 	position: relative;
 }
-#content #usuario form{
-	width: 350px;
+#content form{
+	text-align: left;
+	border-radius: 4px 4px 4px 4px;
+	background: #4E4E4E;
+	padding: 1em;
+	width: 500px;
 }
-
+#content form label{
+	color: #FFFFFF;
+}
+#content form input{
+	padding: 0.3em;
+}
 footer{
 	text-align: center;
 	padding: 1em 0 1em 0;
 	background: #000000;
 	color:#EDEDED;
+}
+
+
+.btn-salir{
+	text-decoration: none;
+	color: #D5D5D5;
+	border-radius: 4px 4px 4px 4px;
+	border: none;
+	padding: 0.3em;
+	background: #287496;
+}
+.btn-form{
+	color: #939393;
+	border-radius: 4px 4px 4px 4px;
+	border: none;
+	padding: 0.3em;
+	background: #EDEDED;
 }

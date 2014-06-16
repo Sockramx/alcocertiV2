@@ -3,7 +3,7 @@ html,body{
 }
 div{
 	color:#D9D9D9;
-	background: #000000;
+	background: #C44522;
 	text-align: center;
 	position: relative;
 	padding: 2em 0 2em 0;
@@ -26,4 +26,12 @@ footer{
 }
 footer h2{
 	color:#E9E9E9;
+}
+
+.btn-pc-ingresar{
+	border: none;
+	border-radius: 4px 4px 4px 4px;
+	padding: 0.3em;
+	background: #EDEDED;
+	color: #7F7F7F;
 }

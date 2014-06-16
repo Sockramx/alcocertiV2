@@ -63,20 +63,29 @@ nav{
 	text-decoration: none;
 }
 #menu_principal li a:hover{
-	color:#C42700;
+	color: #C42700;
 }
-/**/
+/* contenedor */
 
 #content{
 	margin-top:-25px; 
 	height: 100%;
 }
+/* slider */
+#content #container{
+	display: none;
+}
+/* slider */
+#content #fondo #promociones{
+	margin-top: 30px;
+}
+#content #fondo #promociones figure img{
+	width: 100%;
+}
 #content #fondo{
 	position: relative;
 	margin: 0px;
 	background:#FFFFFF;
-	background-repeat: no-repeat;
-	background-size: cover;
 	height: 100%;
 }
 #content #fondo section{
@@ -86,28 +95,12 @@ nav{
 }
 #content #fondo section h4{
 	color:#757575;
-	background: #EDEDED;
+	background: #FFFFFF;
 	font-size: 35px;
 	margin-top: 20px;
-	padding: 4em 0 4em 0;
+	padding: 2em 0 2em 0;
 	text-align: center;
 	width: 100%;
-}
-#content #fondo #promociones{
-	margin: 28px 0 28px 0;
-	text-align: center;
-	background: #FFFFFF;	
-}
-#content #fondo #promociones ul li{
-	padding: 0.5em 0 0.5em 0;
-	display: block;
-}
-#content #fondo #promociones ul li {
-	width: 100%;
-}
-#content #fondo #promociones ul li figure img {
-	widows: 250px;
-	height: 150px;
 }
 #content #fondo section{
 	text-align: center;
@@ -117,27 +110,29 @@ nav{
 	padding-bottom: 4em;
 }
 #content #fondo section article ul li{
+	margin-bottom: 10px;
+	background: #A51100;
 	border-radius: 100px;
 	list-style: none;
 	display: inline-block;
 }
 #content #fondo section article ul li p{
 	color: #EDEDED;
-	padding: 1em 0 1em 0;
+	padding: 0.5em 0 0.5em 0;
 	font-size: 13px;
 	width: 250px;
 }
 #content #fondo section article ul li img{
 	text-align: center;
-	border-radius: 100px;
+	border-radius: 50px;
 	height: 180px;
 	width: 180px;
 
 	transition: transform 0.5s;
-	-o-transition: transform 0.5s;
-	-ms-transition: transform 0.5s;
-	-moz-transition: transform 0.5s;
-	-webkit-transition: transform 0.5s;
+	transition: -o-transform 0.5s;
+	transition: -ms-transform 0.5s;
+	transition: -moz-transform 0.5s;
+	transition: -webkit-transform 0.5s;
 }
 #content #fondo section article ul li img,p{
 	display: inline-block;
@@ -156,6 +151,169 @@ nav{
 	-webkit-transform: rotate(10deg);	
 }
 
+/*servicios*/
+
+#content_servicio{
+	margin-top: 28px;
+}
+#content_servicio #servicios {
+	padding: 7em 0 7em 0;
+	text-align: center;
+}
+#content_servicio #servicios ul h3{
+	color: #AFAFAF;
+	padding: 1em 0 1em 0;
+	font-size: 20px;
+}
+#content_servicio #servicios ul li {
+	color: #F6F6F6;
+	vertical-align: top;
+	display: inline-block;
+	width: 250px;
+	height: 250px; 
+	margin-bottom: 10px;
+
+	transition: background 0.5s;
+	transition: -webkit-background 0.5s;
+	transition: -moz-background 0.5s;
+	transition: -o-background 0.5s;
+	transition: -ms-background 0.5s;
+}
+#content_servicio #servicios ul li:hover {
+	color: #AAAAAA;
+	background: rgba(220, 220, 220, 0.7);
+	
+}
+#content_servicio #servicios ul li img{
+	border-radius: 100px;
+	height: 150px;
+	width: 150px;
+}
+#content_servicio #servicios ul li h4{
+	font-size: 15px;
+}
+#content_servicio #soporte,#ventas,#instalacion{
+	padding: 5em 0 5em 0;
+	text-align: center;
+}
+#content_servicio #soporte{
+	background: #292929;
+}
+#content_servicio #soporte h4{
+	color: #FFFFFF;
+	font-size: 35px;
+	padding: 1em 0 1em 0;
+}
+#content_servicio #soporte figure{
+	width: 100%;
+	margin: 0;
+}
+#content_servicio #soporte figure img{
+	height: 300px;
+	width: 100%;
+}
+#content_servicio #soporte p{
+	border-radius: 8px 8px 8px 8px;
+	background: #FFFFFF;
+	padding: 2em 0 2em 0;
+	width: 100%;
+}
+#content_servicio #soporte figure,p{
+	display: inline-block;
+	vertical-align: middle;
+}
+#content_servicio #ventas{
+	/*background: #12A5FF;*/
+	background: #3999FF;
+}
+#content_servicio #ventas h4{
+	color: #FFFFFF;
+	font-size: 35px;
+	padding: 1em 0 1em 0;
+}
+#content_servicio #ventas figure{
+	margin: 0;
+	width: 100%;
+}
+#content_servicio #ventas figure img{
+	height: 300px;
+	width: 100%;
+}
+#content_servicio #ventas p{
+	border-radius: 8px 8px 8px 8px;
+	background: #F8F8F8;
+	padding: 2em 0 2em 0;
+	color: #3E3E3E;
+	width: 100%;
+}
+#content_servicio #ventas figure,p{
+	display: inline-block;
+	vertical-align: middle;
+}
+#content_servicio #instalacion{
+	/*background: #FFB162*/
+	background: #FFAC35;
+}
+#content_servicio #instalacion h4{
+	color: #FFFFFF;
+	font-size: 35px;
+	padding: 1em 0 1em 0;
+}
+#content_servicio #instalacion figure{
+	margin: 0;
+	width: 100%;
+}
+#content_servicio #instalacion figure img{
+	height: 300px;
+	width: 100%;
+}
+#content_servicio #instalacion p{
+	border-radius: 8px 8px 8px 8px;
+	background: #EDEDED;
+	padding: 2em 0 2em 0;
+	color: #3E3E3E;
+	width: 100%;
+}
+#content_servicio #instalacion figure,p{
+	display: inline-block;
+	vertical-align: middle;
+}
+/* Contacto */
+#contenido_contacto{
+	margin-top: 30px;
+	padding: 1em 0 1em 0;
+}
+#contenido_contacto #form_contacto{
+	width: 100%;
+}
+#contenido_contacto #form_contacto label{
+	color: #E8E8E8;
+	padding: 0.5em;
+}
+#contenido_contacto #form_contacto form{
+	text-align: center;
+	width: 100%;
+	background: #494949;
+	border-radius: 10px 10px 10px 10px;
+	padding: 1em 0 1em 0;
+}
+#contenido_contacto #form_contacto form input{
+	height: 30px;
+	margin: 10px 0 10px 0;
+	width: 200px;
+}
+#contenido_contacto article #map{
+	width: 100%;
+	border: 1px solid #959595;
+}
+#contenido_contacto #locales {
+	text-align: center;
+	color: #5A5A5A;
+	background: #E9E9E9;
+}
+#contenido_contacto #locales p{
+	display: inline-block;
+}
 /* footer */
 
 
@@ -174,7 +332,12 @@ footer li{
 }
 
 
+
+
 /* redes sociales */
+
+
+
 .btn a{
 	padding: 0 0.5em 0 0.5em;
 	text-decoration: none;
@@ -214,4 +377,19 @@ footer li{
 .btn-google:hover{
 	box-shadow: 0px 0px 1px 2px #D43E33;
 }
-
+/* formulario contacto*/
+.txt {
+	color: #3B3B3B;
+	border: none;
+	border-radius: 4px 4px 4px 4px;
+}
+.txtarea {
+	border: none;
+	border-radius: 4px 4px 4px 4px;	
+}
+.btn_enviar_contacto{
+	border:none;
+	background: #0074BB;
+	border-radius: 4px 4px 4px 4px;
+	color:#EBEBEB;
+}
