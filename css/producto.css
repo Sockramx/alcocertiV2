@@ -48,6 +48,14 @@
 	margin-bottom: 5px;
 	text-align: center;
 
+	transition: background 0.5s;
+	transition: -webkit-background 0.5s;
+	transition: -moz-background 0.5s;
+	transition: -o-background 0.5s;
+	transition: -ms-background 0.5s;
+}
+#content_productos #lista_productos ul li:hover {
+	background: rgba(220, 220, 220, 0.7);
 }
 #content_productos #lista_productos ul li img{
 	height: 200px;
