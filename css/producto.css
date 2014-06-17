@@ -60,6 +60,21 @@
 #content_productos #lista_productos ul li img{
 	height: 200px;
 	width: 200px;
+
+	transition: transform 0.5s;
+	transition: -webkit-transform 0.5s;
+	transition: -moz-transform 0.5s;
+	transition: -o-transform 0.5s;
+	transition: -ms-transform 0.5s;
+
+}
+#content_productos #lista_productos ul li img:hover{
+	transform: rotate(10deg);
+	-webkit-transform: rotate(10deg);
+	-moz-transform: rotate(10deg);
+	-o-transform: rotate(10deg);
+	-ms-transform: rotate(10deg);
+
 }
 #content_productos #lista_productos ul li h4{
 	color: #6A6A6A;
