@@ -41,7 +41,15 @@
 	list-style: none;
 	text-align: center;
 }
-
+#content_productos #lista_productos ul li h5 strong{
+	
+	color: #F6F6F6;
+	background:#0083CF;
+	text-align: center;
+	font-size: 14px;
+	width: 100px;
+	padding: 2px;
+}
 #content_productos #lista_productos ul li{
 	display: inline-block;
 	vertical-align: top;

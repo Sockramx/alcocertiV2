@@ -19,6 +19,7 @@ $(document).ready(function(){
 												<li id={{id}}>\
 													<img src={{ imagen }}>\
 													<h4>{{ nombre }}</h4>\
+													<h5><strong>{{ marca }}</strong><h5>\
 													<p>{{ descripcion }}</p>\
 												</li>\
 											{{else}}\
